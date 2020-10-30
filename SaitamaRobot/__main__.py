@@ -196,7 +196,7 @@ def start(update: Update, context: CallbackContext):
                              text="🔰Ambis Kampus🔰",
                              url=f"https://t.me/kampus_ambis"),
                          InlineKeyboardButton(
-                             text="♻️Link Group dan Channel♻️",
+                             text="♻️Channel♻️",
                              url="https://t.me/linkgroupindo")
                      ],
                      [
