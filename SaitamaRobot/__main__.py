@@ -52,13 +52,8 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hai {}, saya adalah {}! 
-Saya adalah manajemen grup bertema Anime.
-Dibuat oleh wibu untuk wibu, Saya mengkhususkan diri dalam mengelola Anime.
+Saya adalah manajemen grup Ambis Kampus. Bertugas Mengamankan, Mengelola, dan mengatur agar group nyaman dan aman terkendali.
 Kamu dapat menemukan daftar perintah yang tersedia dengan /help.
-
-_____________________
-modification by Owner @xpianimevideo
-_____________________
 
 """
 
@@ -81,12 +76,11 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/efe637819d545f95967c9.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/7a8e9be42dd9563c23651.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
-You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+DONATE_STRING = """Tetap Support Kami!
+Ambis Space is hosted on one of Ambis' Servers and doesn't require any donations as of now but \
+ingin kirim donasi ; [klik disini](https://trakteer.id/fosil-forum-studi-ilmu-rri)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -193,27 +187,22 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Add Megumin to your group",
+                            text="☑️ Add Ambis Space to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
                      [
                          InlineKeyboardButton(
-                             text="🎖 Anime Complete",
-                             url=f"https://t.me/xpianimevideo"),
+                             text="🔰Ambis Kampus🔰",
+                             url=f"https://t.me/kampus_ambis"),
                          InlineKeyboardButton(
-                             text="🎯 Anime On Going",
-                             url="https://t.me/xpianimeongoing")
+                             text="♻️Link Group dan Channel♻️",
+                             url="https://t.me/linkgroupindo")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="🧸 Support Group",
-                             url="https://t.me/AnimChatGroup")
-                     ],
-                     [
-                         InlineKeyboardButton(
-                             text="Source Code",
-                             url="https://github.com/naufal-abdurr/SaitamaRobot")
+                             text=" ⚜Central Group⚜",
+                             url="https://t.me/forum_belajar")
                      ]]))
     else:
         update.effective_message.reply_text(
