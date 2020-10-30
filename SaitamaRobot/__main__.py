@@ -79,7 +79,7 @@ And the following:
 SAITAMA_IMG = "https://telegra.ph/file/7a8e9be42dd9563c23651.jpg"
 
 DONATE_STRING = """Tetap Support Kami!
-Ambis Space is hosted on one of Ambis' Servers and doesn't require any donations as of now but \
+Ambis Space is hosted on one of Ambis' Servers and we open donations to manage groups and channels, for your contributions. Thank you.
 ingin kirim donasi ; [klik disini](https://trakteer.id/fosil-forum-studi-ilmu-rri)."""
 
 IMPORTED = {}
@@ -196,7 +196,7 @@ def start(update: Update, context: CallbackContext):
                              text="🔰Ambis Kampus🔰",
                              url=f"https://t.me/kampus_ambis"),
                          InlineKeyboardButton(
-                             text="♻️Channel♻️",
+                             text="♻️Channel & Group♻️",
                              url="https://t.me/linkgroupindo")
                      ],
                      [
