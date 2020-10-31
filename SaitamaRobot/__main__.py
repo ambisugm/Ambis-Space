@@ -52,7 +52,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hai {}, saya adalah {}! 
-Saya adalah manajemen grup Ambis Kampus. Bertugas Mengamankan, Mengelola, dan mengatur agar group nyaman dan aman terkendali.
+Saya adalah manajemen grup Ambis UGM. Bertugas Mengamankan, Mengelola, dan mengatur agar group nyaman dan aman terkendali.
 Kamu dapat menemukan daftar perintah yang tersedia dengan /help.
 
 """
@@ -79,7 +79,7 @@ And the following:
 SAITAMA_IMG = "https://telegra.ph/file/7a8e9be42dd9563c23651.jpg"
 
 DONATE_STRING = """Tetap Support Kami!
-Ambis Space is hosted on one of Ambis' Servers and we open donations to manage groups and channels, for your contributions. Thank you.
+Ambis UGM is hosted on one of Ambis' Servers and we open donations to manage groups and channels, for your contributions. Thank you.
 ingin kirim donasi ; [klik disini](https://trakteer.id/fosil-forum-studi-ilmu-rri)."""
 
 IMPORTED = {}
@@ -187,7 +187,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Add Ambis Space to your group",
+                            text="☑️ Add Ambis UGM [bot] to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
